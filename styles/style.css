@@ -1,0 +1,115 @@
+
+body {
+  background-image: url(..//images/bgg.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  color:aqua;
+}
+/* Для всех тегов <p> на странице */
+p {
+  font-size: 20px;  /* Размер текста 25px */
+  color: aqua;
+}
+
+/* Для всех тегов <div> на странице */
+div {
+  width: 90%; /* Установим ширину блока в 280px */
+  border: 0px solid black; /* Рамка блока */
+
+  border-radius: 16px; /* Скруглим края на 16px */
+  box-shadow: 1px 1px 10px 4px rgba(158, 158, 158, 128); /* Тень от блока div */
+  
+  margin: 16px; /* Отступы снаружи блока div */
+}
+
+/* Для всех тегов <p> и <h1> но ВНУТРИ тега <div>  */
+div p,h1 {
+  padding-left: 10px;   /* Отступы внутри блока div слева */
+  padding-right: 10px;  /* Отступы внутри блока div справа*/
+  padding-bottom: 10px; /* Отступы внутри блока div снизу */
+}
+
+/* Для всех тегов <img> на странице */
+img {
+  width: 100%; /* Ширина изображения в процентах от родителя (от div) */
+  border-top-left-radius: 16px;  /* Скруглим края сверху и слева */
+  border-top-right-radius: 16px; /* Скруглим края сверху и справа */
+}
+
+p {
+  padding: 16px; /* Внутренние отступы на 16px */
+  border: 1px solid #000; /* Рамка вокруг блочного элемента */
+  margin: 32px; /* Внешние отступы на 16px */
+}
+  
+header ul {
+  display: flex;
+border: 1px dashed #000;
+padding: 8px;
+}
+
+header ul li {
+margin-right: 16px;
+list-style: none;
+}
+header ul li a {
+text-decoration: none;
+color: rgb(34, 29, 29);
+}
+header ul li a:hover {
+text-decoration: underline;
+color: blue;
+}
+
+.btn {
+height: 64px;
+}
+
+.btn::before {
+content:"" ;
+display: block;
+position: absolute;
+height: 64px;
+width: 64px;
+border-radius: 32px;
+z-index: -1;
+background: #73fbc9;
+transition: width 400ms;
+}
+
+.btn:is(:hover,  :focus)::before {
+  width: 380px;
+}
+
+
+.main-menu {
+  justify-content: space-around;
+  background-color: aquamarine;
+}
+
+.profile-img {
+  width: 500px;
+}
+.profile-imf {
+  width: 500px;
+}
+
+main {
+  color: aqua;
+}
+
+button {
+  padding: 20px 50px;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  background-color: blue;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 2px;
+  box-shadow: 0px 5px 10px #000;
+  
+}

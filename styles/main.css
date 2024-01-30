@@ -1,0 +1,44 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background-image: url(../images/bg.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: aqua;
+  }
+  
+  .main {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    color: aqua;
+  }
+  
+  .main button:hover {
+    background-color: aqua;
+    color: aqua;
+    transition: 0.2s;
+  }
+
+  .btn {
+    height: 64px;
+    }
+    
+    .btn::before {
+    content:'';
+    display: block;
+    position: absolute;
+    height: 64px;
+    width: 64px;
+    border-radius: 32px;
+    z-index: -1;
+    background: aqua;
+    transition: width 400ms;
+    }
+    
+    .btn:is(:hover,  :focus)::before {
+      width: 380px;
+    }
